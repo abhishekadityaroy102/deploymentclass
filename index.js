@@ -8,11 +8,11 @@ app.get("/", (req, res) => {
   res.send("Welcome to my world!");
 });
 app.listen(port, async () => {
-  // try {
-  //   await connection();
-  //   console.log("connected");
-  // } catch {
-  //   console.log(err.message);
-  // }
+  try {
+    await connection();
+    console.log("connected");
+  } catch {
+    console.log(err.message);
+  }
   console.log("listening on port no : 8080");
 });
